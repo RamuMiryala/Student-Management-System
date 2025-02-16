@@ -1,0 +1,33 @@
+
+.search-student {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    label{
+        padding: 12px;
+      font-size: 25px;
+      color: #999;
+    }
+  
+    .search-input {
+      width: 40%;
+      padding: 6px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      
+      
+      &:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+  
+      &::placeholder {
+        color: #999;
+        font-style: italic;
+      }
+    }
+  }
+  

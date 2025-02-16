@@ -1,0 +1,89 @@
+.student-list {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .student-card {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .student-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    transition: background 0.3s ease-in-out;
+    background: #f9f9f9;
+    text-align: left;
+  
+    &:hover {
+      background: #d1ecf1;
+    }
+  }
+  
+  .student-header {
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  /* Smooth Expand Animation */
+  .student-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    padding: 0 10px;
+    background: #f8f9fa;
+    border-top: 1px solid #ccc;
+  }
+  
+  .student-details.open {
+    max-height: 300px; /* Increased for edit form */
+    opacity: 1;
+    padding: 10px;
+  }
+  
+  button {
+    margin-top: 5px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:first-of-type {
+    background: #007bff;
+    color: white;
+  
+    &:hover {
+      background: #0056b3;
+    }
+  }
+  
+  button:last-of-type {
+    background: #dc3545;
+    color: white;
+  
+    &:hover {
+      background: #c82333;
+    }
+  }
+  
+  /* Edit Form */
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  
+    input {
+        
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+  }
+  

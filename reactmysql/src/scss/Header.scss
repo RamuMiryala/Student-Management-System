@@ -1,0 +1,91 @@
+.header {
+  width: 100%;
+  background-color: #007bff;
+  padding: 1px 20px;
+  top: 0;
+  height: 16vh;
+  //border: 1px solid #fff;
+  margin-bottom: auto;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  font-size: 18px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 1px 20px;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: #f1f1f1;
+  }
+}
+
+.nav__logo img {
+  width: 90px;
+  border-radius: 5px;
+}
+
+/* --- MOBILE NAV TOGGLE (HIDDEN ON DESKTOP) --- */
+.nav__toggle {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
+
+/* Responsive for Small Screens */
+@media (max-width: 480px) {
+  .nav__list {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #0056b3;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav__list.active {
+    display: flex;
+  }
+
+  .nav__item {
+    margin: 10px 0;
+  }
+
+  .nav__toggle {
+    display: block;
+    margin-right: 100px;
+  }
+}
